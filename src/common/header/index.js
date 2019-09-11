@@ -73,7 +73,7 @@ class Header extends Component {
                         >
                             <NavSearch
                                 className={focused ? "focused" : ""}
-                                onFocus={()=>handleInputFocus(list.size)}
+                                onFocus={()=>handleInputFocus(list)}
                                 onBlur={handleInputBlur}
                             >
                             </NavSearch>
@@ -108,9 +108,8 @@ const mapStateToProps = (state) =>{
 const mapDispatchToProps = (dispatch) => {
     return {
         handleInputFocus(list){
-            if(list.size === 0){
-                dispatch(actionCreators.getList())
-            }
+            console.log(list.size);
+            (list.size === 0) && dispatch(actionCreators.getList());
             dispatch(actionCreators.searchFocus());
         },
         handleInputBlur(){
@@ -123,6 +122,7 @@ const mapDispatchToProps = (dispatch) => {
             dispatch(actionCreators.mouseLeave());
         },
         handleChangePage(page,totalPage,spin){
+            //control icon spin
             let originAngle = spin.style.transform.replace(/[^0-9]/ig,'');
             if(originAngle){
                 originAngle = parseInt(originAngle,10);

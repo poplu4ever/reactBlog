@@ -4,6 +4,7 @@ import List from './components/List';
 import Writer from './components/Writer';
 import Recommend from './components/Recommend';
 import Topic from './components/Topic';
+import PIC from '../../statics/final-fantasy-vii-remake-iconic-art-1200x675.jpg';
 
 
 class Home extends Component{
@@ -11,7 +12,11 @@ class Home extends Component{
         return(
             <HomeWrapper>
                 <HomeLeft>
-                    <img src='../../statics/logo.png'/>
+                    <img
+                        className='banner-pic'
+                        src={PIC}
+                        alt=''
+                    />
                     <Topic/>
                     <List/>
                 </HomeLeft>

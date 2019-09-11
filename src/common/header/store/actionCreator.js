@@ -30,7 +30,6 @@ export const changePage = (page) =>({
     data:page
 })
 
-
 export const getList = () => {
     return (dispatch) =>{
         axios.get('/api/headerList.json').then((res)=>{
