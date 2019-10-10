@@ -1,0 +1,28 @@
+
+{
+	"success": true,
+	"data": {
+		"topicList": [{
+			"id": 1,
+			"title": "游戏新闻",
+			"imgUrl": "../../src/statics/cloud-game.jpg"
+		}, {
+			"id": 2,
+			"title": "当前在玩",
+			"imgUrl": "../../src/statics/ps control.jpeg"
+		}],
+		"articleList": [{
+			"id": 1,
+			"title": "《漫威复仇者联盟》中文版将于2020年5月15日同步发售",
+			"desc": "将登陆PS4/Xbox One/PC平台",
+			"imgUrl": "https://img01.vgtime.com/game/cover/2019/09/11/190911133937608_u162815.jpg?x-oss-process=image/resize,m_pad,color_000000,w_320,h_200"
+		}],
+		"recommendList": [{
+			"id": 1,
+			"imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-3-7123fd94750759acf7eca05b871e9d17.png"
+		}, {
+			"id": 2,
+			"imgUrl": "http://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
+		}]
+	}
+}
