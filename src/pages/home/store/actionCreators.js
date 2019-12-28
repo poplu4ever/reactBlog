@@ -4,16 +4,17 @@ import * as constants from './constants';
 const changeHomeData = (result) => ({
     type:constants.CHANGE_HOME_DATA,
     topicList:result.topicList,
-    articleList:result.articleList,
+    articleList:result.data,
     recommendList:result.recommendList
-})
+});
 
 
 export const getHomeInfo = ()=>{
     return (dispatch) => {
-        axios.get('/api/home.json').then(res=> {
-            const result = res.data.data;
+        axios.get('/api/blog/list').then(res=> {
+            const result = res.data;
+            console.log(result);
             dispatch(changeHomeData(result));
         })
     }
-}
+};

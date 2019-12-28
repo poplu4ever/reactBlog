@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.div`
        border-bottom:1px solid #f0f0f0; 
 `;
 
-export const Logo = styled.a`
+export const Logo = styled.div`
       position:absolute;
       top:0;
       left:0;
@@ -85,7 +85,7 @@ export const Addition = styled.div`
     height:56px;
 `;
 
-export  const Button = styled.div`
+export const Button = styled.div`
     float:right;
     margin-top:9px;
     margin-right:20px;

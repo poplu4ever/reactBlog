@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React,{PureComponent} from 'react';
 import axios from 'axios';
 import {connect} from 'react-redux';
 import {HomeWrapper,HomeLeft,HomeRight} from "./style";
@@ -10,7 +10,7 @@ import {actionCreators} from "./store";
 import PIC from '../../statics/final-fantasy-vii-remake-iconic-art-1200x675.jpg';
 
 
-class Home extends Component{
+class Home extends PureComponent{
     render(){
         return(
             <HomeWrapper>
@@ -20,11 +20,11 @@ class Home extends Component{
                         src={PIC}
                         alt=''
                     />
-                    <Topic/>
+                    {/*<Topic/>*/}
                     <List/>
                 </HomeLeft>
                 <HomeRight>
-                    <Recommend/>
+                    {/*<Recommend/>*/}
                     <Writer/>
                 </HomeRight>
             </HomeWrapper>

@@ -73,7 +73,7 @@ export const ListInfo = styled.div`
         padding-right:10px;
         color:#333;
     };
-    .desc{
+    .content{
         font-size:13px;
         line-height:24px;
         color:#999;
